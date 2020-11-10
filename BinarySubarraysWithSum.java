@@ -5,7 +5,8 @@
  *              Lets maintain two pointers l and r. we will increase the window size by incrementing
  *              r pointer to it's right until the sum criteria is satisified. then we increment the
  *              number of subarray counter(cnt) by moving the l pointer to it's right until the sum criteria
- *              becomes false, thereby counting all the sub arrays along the path.
+ *              becomes false, thereby counting all the sub arrays along the path. we repeat this process until
+ *              the r pointer hits end of the array.
  */
  
 
