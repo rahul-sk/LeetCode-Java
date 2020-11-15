@@ -1,9 +1,9 @@
 /**
- *Consider all the leaves of a binary tree, from left to right order, the values of 
- *those leaves form a leaf value sequence. For example, in the given tree above, the 
- *leaf value sequence is (6, 7, 4, 9, 8). Two binary trees are considered leaf-similar 
- *if their leaf value sequence is the same. Return true if and only if the two given trees 
- *with head nodes root1 and root2 are leaf-similar.
+ * Consider all the leaves of a binary tree, from left to right order, the values of 
+ * those leaves form a leaf value sequence. For example, in the given tree above, the 
+ * leaf value sequence is (6, 7, 4, 9, 8). Two binary trees are considered leaf-similar 
+ * if their leaf value sequence is the same. Return true if and only if the two given trees 
+ * with head nodes root1 and root2 are leaf-similar.
  * @author Rahul S Koimattur
  * Intuition : Traverse the tree in a preorder fashion and store all the leaves of the trees in 2
  *             seperate ArrayLists. finally check if the contents of two arraylists are same or not.
