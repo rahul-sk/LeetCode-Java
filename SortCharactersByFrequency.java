@@ -1,7 +1,7 @@
  /**
  * Given a string, sort it in decreasing order based on the frequency of characters. 
  * @author Rahul S Koimattur
- * Intuition :  Use a HashMap to count the frequency of each character, the store the character and it's respective frequency in a 2D array and sort
+ * Intuition :  Use a HashMap to count the frequency of each character, then store the character and it's respective frequency in a 2D array and sort
  *              This array based on frequency, Finally iterate over the sorted array and append the respective characters to the result string in the
  *              sorted order.
  */
