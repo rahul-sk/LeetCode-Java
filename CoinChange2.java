@@ -28,3 +28,20 @@
         
     }
 }
+
+// O(N) Space approch:
+
+class Solution {
+    public int change(int n, int[] arr) {
+        int[] dp=new int[n+1];
+        dp[0]=1;
+        for(int c:arr){
+          for(int i=1;i<=n;i++){
+            if(c<=i){
+              dp[i]+=dp[i-c];
+            }
+          }
+        }
+        return dp[n];
+    }
+}
