@@ -18,25 +18,24 @@ class Solution {
          hm.put(fr,new ArrayList<>());
              }
             hm.get(fr).add(to);
-           inn[e[0]]++;
+            inn[e[0]]++;
         }
         int cnt=0;
         Queue<Integer> q=new LinkedList<>();
         for(int i=0;i<numCourses;i++){
-       if(inn[i]==0){
-         q.add(i);
+        if(inn[i]==0){
+           q.add(i);
         }
         }
         while(!q.isEmpty()){
-        int nn=q.poll();
+            int nn=q.poll();
             cnt++;
             if(hm.get(nn)!=null)
             for(int i:hm.get(nn)){
-        if(--inn[i]==0){
-        q.add(i);
-        }
+                if(--inn[i]==0){
+                q.add(i);
+                }
             }
-            
         }
         return cnt==numCourses;
         
